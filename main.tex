@@ -1,0 +1,75 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{pifont}
+\usepackage{cleveref}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\eop}{\vspace{10px}}
+\renewcommand{\sf}[1]{\textsf{\textup{#1}}}  
+\renewcommand{\tt}[1]{\texttt{\textup{#1}}}  
+\newcommand{\g}[1]{\langle\sf{#1}\rangle}
+\newcommand{\green}[1]{{\color{green}#1}}
+\newcommand{\blue}[1]{{\color{blue}#1}}
+\newcommand{\red}[1]{{\color{red}#1}}  
+\usetheme{pro}
+\usepackage[export]{adjustbox}
+\usepackage{appendixnumberbeamer}
+
+\title[Footnote Title]{Title}
+\date[DOLAP]{DOLAP2020}
+\author[Matteo Francia (UniBO)]{
+    \textit{\textbf{Matteo Francia}}\inst{1}, Enrico Gallinucci\inst{1}, Matteo Golfarelli\inst{1}\\
+    \url{m.francia@unibo.it}
+}
+\institute[UniBO]{\inst{1} University of Bologna}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+{
+\bgimg{0.3}{imgs/25550.jpg}
+\begin{frame}{A longer title}
+    \begin{itemize}
+    \item one
+    \item two
+    \end{itemize}
+
+This is a citation \cite{DBLP:journals/snam/FranciaGG19}
+\end{frame}
+}
+
+{
+\setbeamercolor{background canvas}{bg=UBCblue,fg=white}
+\begin{frame}
+    \centering
+    \topskip0pt
+    \vspace*{\fill}
+    \begin{color}{white}\Huge End \end{color} %Questions?
+    \vspace*{\fill}
+\end{frame}
+}
+
+% \appendix
+
+\begin{frame}[allowframebreaks]{References}
+    \tiny
+    \bibliographystyle{unsrt}
+    \bibliography{refs.bib}
+\end{frame}
+
+\end{document}
